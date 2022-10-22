@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headetText {
+  margin: 8px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  word-spacing: -1px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 899px) {
+  .headetText {
+    font-size: 25px;
   }
 }
+.select {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  line-height: 2px;
+  padding: 8px;
+  background: #80808024;
+}
+select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px;
+  font-size: 19px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont {
   display: flex;
+  align-items: baseline;
+  margin-bottom: 25px;
+  width: 100%;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+}
+@media (min-width: 899px) {
+  .cont {
+    flex-direction: row;
+  }
+}
+.center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  padding: 5px 5%;
+}
+.searchGlobal {
+  height: 32px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px grey;
+  padding: 3px;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.searchColumn {
+  height: 25px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px grey;
+  padding: 3px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 150px;
+  overflow: hidden;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+/*Pagination*/
+.nextButton {
+  height: 35px;
+  width: 60px;
+  background: #ffc107;
+  border: none;
+  box-shadow: 0px 0px 3px grey;
+  font-size: 16px;
+  cursor: pointer;
+}
+.prevButton {
+  height: 35px;
+  width: 60px;
+  background: #0c9de0;
+  border: none;
+  box-shadow: 0px 0px 3px grey;
+  font-size: 16px;
+  cursor: pointer;
+}
+.inputGo {
+  height: 32px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px #80808061;
+  padding: 2px 5px;
+}
+.goButton {
+  margin: 0px 5px;
+  height: 30px;
+  width: 50px;
+  font-size: 17px;
+  box-shadow: 0px 0px 3px #808080a1;
+  background: #3f51b5;
   color: white;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.sizeSelect {
+  height: 30px;
+  margin: 0px 8px;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px #8080801f;
+  padding: 2px 5px;
+  background: #8080801f;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*End Pagination*/
+/*Start Order Column*/
+.orderButton {
+  margin: 0px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px grey;
+  background: #cddc394a;
+  font-size: 16px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+/*End Coliumn order*/
+/*Show Column*/
+.contShowCol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
